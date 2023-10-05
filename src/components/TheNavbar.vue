@@ -2,7 +2,7 @@
   <header class="bg-white shadow-md h-16 flex justify-between items-stretch">
     <router-link
       :to="{ name: 'home' }"
-      class="inline-flex items-center h-full px-5"
+      class="inline-flex items-center h-full px-5 text-2xl font-bold"
     >
       Home
     </router-link>

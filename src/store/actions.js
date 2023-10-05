@@ -6,4 +6,14 @@ export default {
       commit("setSearchedMeals", data);
     });
   },
+  searchMealsByLetter: function ({ commit }, letter) {
+    axiosClient.get(`search.php?f=${letter}`).then(({ data }) => {
+      commit("setMealsByLetter", data.meals);
+    });
+  },
+  searchMealsByIngredients: function ({ commit }, ing) {
+    axiosClient.get(`list.php?i=${ing}`).then(({ data }) => {
+      commit("setMealsByIngredients", data.meals);
+    });
+  },
 };

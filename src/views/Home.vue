@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col p-8 items-center justify-center">
-    <div class="flex gap-2 justify-center mt-2">
+  <div class="flex flex-col p-2 items-center justify-center">
+    <div class="flex flex-wrap gap-2 justify-center mt-2">
       <router-link
         v-for="letter in letters"
         :to="{ name: 'byLetter', params: { letter } }"
