@@ -21,7 +21,7 @@
       </router-link>
       <router-link
         :to="{ name: 'byIngredient' }"
-        class="inline-flex items-center px-2 h-full transition-colors hover:bg-purple-100"
+        class="inline-flex items-center px-2 mr-4 h-full transition-colors hover:bg-purple-100"
       >
         Meals By ingredients
       </router-link>
