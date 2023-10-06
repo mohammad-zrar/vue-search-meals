@@ -12,7 +12,7 @@ export default {
     });
   },
   searchMealsByIngredients: function ({ commit }, ing) {
-    axiosClient.get(`list.php?i=${ing}`).then(({ data }) => {
+    axiosClient.get(`filter.php?i=${ing}`).then(({ data }) => {
       commit("setMealsByIngredients", data.meals);
     });
   },
